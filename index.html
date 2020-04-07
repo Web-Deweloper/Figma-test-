@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Flame</title>
+</head>
+<body>
+   
+<header class="header">
+   <div class="header__logo">Шапка сайта</div>
+</header>
+
+<div class="container">
+
+   <form class="form" action="/" method="post">
+      <input class="input_intro" type="text" name="name" placeholder="Запрос пользователя">
+      <button class="btn" type="submit">Найти</button>
+      <button class="btn btn--reset" type="reset">Закрыть</button>
+   </form>
+
+   <main class="main">
+      <div class="main__inner">
+         <h3 class="main__title">Результаты по запросу</h3>
+         <p class="main__text">Показаны результаты для “Запрос пользозвателя”. Вы искали “Зопрос пользователя</p>
+      </div>
+      <div class="main__item1">
+         <div class="main__item">
+            <a href="#" class="main__img"></a>
+            <div class="main__content">
+               <div class="main__subtitle"><a class="main__subtitle__link" href="#">Название категории</a></div>
+               <div class="main__text">134 товара</div>
+            </div>
+         </div>
+
+         <div class="main__item">
+            <a href="#" class="main__img"></a>
+            <div class="main__content">
+               <div class="main__subtitle"><a class="main__subtitle__link" href="#">Название категории</a></div>
+               <div class="main__text">134 товара</div>
+            </div>
+         </div>
+
+         <div class="main__item">
+            <a href="#" class="main__img"></a>
+            <div class="main__content">
+               <div class="main__subtitle"><a class="main__subtitle__link" href="#">Название категории</a></div>
+               <div class="main__text">134 товара</div>
+            </div>
+         </div>
+
+         <div class="main__item">
+            <a href="#" class="main__img"></a>
+            <div class="main__content">
+               <div class="main__subtitle"><a class="main__subtitle__link" href="#">Название категории</a></div>
+               <div class="main__text">134 товара</div>
+            </div>
+         </div>
+
+         <div class="main__item">
+            <a href="#" class="main__img"></a>
+            <div class="main__content">
+               <div class="main__subtitle"><a class="main__subtitle__link" href="#">Название категории</a></div>
+               <div class="main__text">134 товара</div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   
+   <div class="categories">
+      <div class="categories__item categories__item--first">
+         <h4 categories__title>Все категории</h4>
+      </div>
+      <div class="categories__item categories__item--two">
+         <div class="categories__text">Сортировать по:</div>
+         <a class="categories__link active" href="#">Популярности</a>
+         <a class="categories__link" href="#">Сначала дешевые</a>
+         <a class="categories__link" href="#">Сначала дорогие</a>
+      </div>
+      <div class="categories__item categories__item--three">
+         Сортировать по
+         <form class="form__select" action="/" method="post">
+            <select class="select" name="sort" id="sort">
+               <option value="24">24</option>
+               <option value="36">36</option>
+               <option value="50">50</option>
+            </select>
+         </form>
+      </div>
+   </div> <!--categories-->
+   
+   <div class="content">
+      <div class="content__item">
+         <!-- sidebar -->
+         <div class="sidebar">
+               <nav class="nav">
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Категория в которой нашли что-то <span>(xxx)</span></a>
+                  <a class="sidebar__link" href="#">Еще 10 категорий...</a>
+               </nav>
+
+               <div class="sidebar__currency">
+                  Цена, валюта
+               </div>
+               <form class="sidebar__form" action="/" method="post" >
+                  <span class="sidebar__text">от</span>
+                  <input class="sidebar__input" type="number" name="currency" value="1000">
+                  <span class="sidebar__text">до</span>
+                  <input class="sidebar__input" type="number" name="currency" value="1000000">
+                  <span class="sidebar__text">Р</span>
+               </form>
+
+               <div class="brands">
+                  <h4 class="brands__title">Бренды</h4>
+                  <form action="/" method="post">
+                     <div class="brands__item">
+                        <input id="brand" type="checkbox" name="brand">
+                        <label class="brands__label" for="brand">Бренд <span>(xxx)</span></label>
+                     </div>
+                     <div class="brands__item">
+                        <input id="brand1" type="checkbox" name="brand">
+                        <label class="brands__label" for="brand1">Бренд <span>(x)</span></label>
+                     </div>
+                     <div class="brands__item">
+                        <input id="brand2" type="checkbox" name="brand">
+                        <label class="brands__label" for="brand2">Бренд <span>(x xxx)</span></label>
+                     </div>
+                     <button class="brands__btn" type="reset">Очистить</button>
+                  </form>
+               </div>
+
+         </div> <!--sidebar-->
+      </div>
+      <div class="content__item">
+         <div class="clarification">
+            <div class="clarification__item">Уточнение</div>
+            <div class="clarification__item">Уточнение</div>
+            <div class="clarification__item">Уточнение</div>
+            <div class="clarification__item">Уточнение</div>
+         </div>
+
+         <div class="bloc">
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <div class="bloc__item">
+               <div class="bloc__img"><a href="#"></a></div>
+               <a class="bloc__text" href="#">Наименование товара, которое не более 2 строк</a>
+               <div class="bloc__price">
+                  ХХ ХХХ, &euro;
+                  <div class="bloc__price bloc__price--sale">ХХ ХХХ &euro;</div>
+               </div>
+               <a class="bloc__btn" href="#">Кнопка</a>
+            </div>
+
+            <nav class="bloc__nav">
+               <a class="bloc__link" href="#">2</a>
+               <a class="bloc__link active" href="#">3</a>
+               <div class="bloc__footer">...</div>
+               <a class="bloc__link bloc__link--border" href="#">13</a>
+            </nav>
+         </div> <!--bloc-->
+      </div> <!--content__item-->
+
+   </div> <!--content-->
+
+</div> <!--container-->
+</body>
+</html>
